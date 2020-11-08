@@ -6,7 +6,7 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitleAlt: `Manan Agarwal`,
   },
   plugins: [
     {
@@ -26,11 +26,11 @@ module.exports = {
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/manan_0308`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/mananagarwal03`,
           },
         ],
       },
