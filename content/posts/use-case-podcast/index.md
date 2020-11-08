@@ -1,0 +1,63 @@
+
+UseCase with Mona Gandhi
+
+
+What is PM?
+* Intellectual curiosity, the ability to observe things and have an open mind, how you are affecting the problem that the user is trying to solve
+* Identify TA/ identify natural behaviour
+* Is your product creating a value/how badly do they need a product
+* Is it a vitamin product vs painkiller product
+* Power of storytelling is very important for user/stakeholder/team
+* PM is both art and science
+* Power of Observation is very important
+* Not just how, ask why
+* Going deeper is the art of PM, BE CURIOUS
+
+How to identify PMF?
+* NPS survey on how happy will you be when this product goes away
+* Identifying your Northstar metric and consistently hitting it
+
+Word of Mouth is underrated:
+* Cult in a trial class says “we are cult”
+* Uber adds emotional story about driver
+* Zomato tells story about delivery guy
+* Cred sent cake to office randomly
+* Ikea gave vr headset to auto guys in Hyderabad
+
+Skillset of PM:
+* technical understanding
+* product sensibility:good vs bad product
+* changing your lens to a product lens
+* understanding basic design principle
+* have an analytical perspective
+
+Hard skills of a PM:
+* prioritise better
+* what framework to use
+* personality of constant curiosity
+* personality of grit/motivation 
+
+
+On Growth:
+Growth is primarily acquisition/retention/monetization
+
+Acqusition: 
+* Identify TA/Behaviour/where they are
+* It is to try users to product once
+* PR helped AIRBNB, PR is not news about your funding round
+* Identify which channel user is coming from and identifying LTV
+* Build compounding growth loops so 1 user brings 20 others
+
+Retention:
+* Core focus of growth is in retention not acquisition
+* Build trust in the product is the biggest retention hack
+* Consistently deliver what it set to delivers
+* DO THINGS THAT ARE UNSCALABLE AT THE BEGINNING, DO THEM TO TAKE YOU TO YOUR IDEAL SETUP
+* AIRBNB founders identified their AHA moment as good pictures of the homes and built around them
+* Airbnb employees themselves tried the homes
+* Value of retention was tied into the acquisition channels
+
+When somebody pays you money, you get different engagement, thinking about monetization is important
+
+
+
