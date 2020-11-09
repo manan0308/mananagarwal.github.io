@@ -8,6 +8,8 @@ module.exports = {
   siteMetadata: {
     siteTitle: `Manan Agarwal`,
     siteTitleAlt: `Manan Agarwal`,
+    siteHeadline: `Manan Agarwal`,
+    siteDescription: `I build stuff on the internet for the internet and share my learnings`,
   },
   plugins: [
     {
