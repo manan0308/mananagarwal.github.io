@@ -10,7 +10,7 @@ module.exports = {
     siteTitleAlt: `Manan Agarwal`,
     siteHeadline: `Manan Agarwal`,
     siteDescription: `I build stuff on the internet, for the internet and share my learnings.`,
-    siteImage: "/apple-touch-icon.png",
+    siteImage: "/mananpicture.jpg",
   },
   plugins: [
     {
