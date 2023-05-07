@@ -39,11 +39,35 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-182376999-1",
-      },
+   {
+  resolve: `gatsby-plugin-google-gtag`,
+  options: {
+    // Add both your Universal Analytics (UA) and GA4 tracking IDs here.
+    trackingIds: [
+      "UA-182376999-1", // Your UA tracking ID
+      "G-TLRJBEVB1S",   // Your GA4 measurement ID
+    ],
+    pluginConfig: {
+      head: true, // Puts tracking script in the head instead of the body.
+      anonymize_ip: true, // Anonymize IP addresses.
+    },
+  },
+},
+      {
+  resolve: `gatsby-plugin-google-gtag`,
+  options: {
+    // Add both your Universal Analytics (UA) and GA4 tracking IDs here.
+    trackingIds: [
+      "UA-182376999-1", // Your UA tracking ID
+      "G-XXXXXXXXXX",   // Your GA4 measurement ID
+    ],
+    pluginConfig: {
+      head: true, // Puts tracking script in the head instead of the body.
+      anonymize_ip: true, // Anonymize IP addresses.
+    },
+  },
+},
+
     },
     `gatsby-plugin-sitemap`,
     {
