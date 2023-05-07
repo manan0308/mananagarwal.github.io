@@ -1,97 +1,37 @@
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
-    siteTitle: `Manan Agarwal`,
-    siteTitleAlt: `Manan Agarwal`,
-    siteHeadline: `Manan Agarwal`,
-    siteDescription: `I build stuff on the internet, for the internet and share my learnings.`,
-    siteImage: "/mananpicture.jpg",
+    // ...
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
-      // See the theme's README for all available options
+      // ...
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        navigation: [
-          {
-            title: `Blog`,
-            slug: `/blog`,
-          },
-          {
-            title: `About`,
-            slug: `/about`,
-          },
+        // Add both your Universal Analytics (UA) and GA4 tracking IDs here.
+        trackingIds: [
+          "UA-182376999-1", // Your UA tracking ID
+          "G-TLRJBEVB1S",   // Your GA4 measurement ID
         ],
-        externalLinks: [
-          {
-            name: `Twitter`,
-            url: `https://twitter.com/manan_0308`,
-          },
-          {
-            name: `LinkedIn`,
-            url: `https://www.linkedin.com/in/mananagarwal03`,
-          },
-        ],
+        pluginConfig: {
+          head: true, // Puts tracking script in the head instead of the body.
+          anonymize_ip: true, // Anonymize IP addresses.
+        },
       },
-    },
-   {
-  resolve: `gatsby-plugin-google-gtag`,
-  options: {
-    // Add both your Universal Analytics (UA) and GA4 tracking IDs here.
-    trackingIds: [
-      "UA-182376999-1", // Your UA tracking ID
-      "G-TLRJBEVB1S",   // Your GA4 measurement ID
-    ],
-    pluginConfig: {
-      head: true, // Puts tracking script in the head instead of the body.
-      anonymize_ip: true, // Anonymize IP addresses.
-    },
-  },
-},
-      {
-  resolve: `gatsby-plugin-google-gtag`,
-  options: {
-    // Add both your Universal Analytics (UA) and GA4 tracking IDs here.
-    trackingIds: [
-      "UA-182376999-1", // Your UA tracking ID
-      "G-XXXXXXXXXX",   // Your GA4 measurement ID
-    ],
-    pluginConfig: {
-      head: true, // Puts tracking script in the head instead of the body.
-      anonymize_ip: true, // Anonymize IP addresses.
-    },
-  },
-},
-
     },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Manan Agarwal`,
-        short_name: `Manan Agarwal`,
-        description: `I build stuff and share my learnings`,
-        start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#6B46C1`,
-        display: `standalone`,
-        icons: [
-          {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ],
+        // ...
       },
     },
     `gatsby-plugin-offline`,
@@ -105,4 +45,4 @@ module.exports = {
       },
     },
   ].filter(Boolean),
-}
+};
