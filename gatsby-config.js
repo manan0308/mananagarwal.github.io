@@ -48,7 +48,6 @@ module.exports = {
           "G-TLRJBEVB1S",   // Your GA4 measurement ID
         ],
          gtagConfig: {
-      send_page_view: true,
       cookie_expires: 60 * 60 * 24 * 30, // 30 days
       cookie_prefix: 'my_ga_cookie',
       cookie_domain: 'mananagarwal.in',
@@ -58,6 +57,7 @@ module.exports = {
         pluginConfig: {
           head: true, // Puts tracking script in the head instead of the body.
           anonymize_ip: true, // Anonymize IP addresses.
+          send_page_view: true,
         },
       },
     },
