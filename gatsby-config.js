@@ -47,6 +47,14 @@ module.exports = {
           "UA-182376999-1", // Your UA tracking ID
           "G-TLRJBEVB1S",   // Your GA4 measurement ID
         ],
+         gtagConfig: {
+      send_page_view: true,
+      cookie_expires: 60 * 60 * 24 * 30, // 30 days
+      cookie_prefix: 'my_ga_cookie',
+      cookie_domain: 'mananagarwal.in',
+      cookie_update: true,
+      cookie_flags: 'SameSite=None;Secure',
+    },
         pluginConfig: {
           head: true, // Puts tracking script in the head instead of the body.
           anonymize_ip: true, // Anonymize IP addresses.
