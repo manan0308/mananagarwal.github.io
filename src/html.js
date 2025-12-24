@@ -12,14 +12,14 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {/* Google Analytics 4 */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLRJBEVB1S"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GHSYW6EHT"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-TLRJBEVB1S', {
+              gtag('config', 'G-3GHSYW6EHT', {
                 send_page_view: true
               });
             `,
