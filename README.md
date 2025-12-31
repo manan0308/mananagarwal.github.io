@@ -7,13 +7,13 @@ This repository contains the source code for my personal website, [www.mananagar
 1. **Clone the repository**
 
    ```shell
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/manan0308/mananagarwal.github.io.git
    ```
 
 2. **Install dependencies**
 
    ```shell
-   cd your-repo-name
+   cd mananagarwal.github.io
    npm install
    ```
 

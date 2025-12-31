@@ -420,7 +420,7 @@ const LegoCollection = () => {
           lineHeight: 1.7,
           flex: 1,
         }}>
-          Welcome to my little corner of brick-built obsession. What started as a parting gift when I left Razorpay in late 2023 has quietly grown into a full-blown hobby. Two years and 36,000+ pieces later, this page serves as my personal archive: a repository of every set I've built, tracked down to the last brick. Yes, there's an Excel sheet for this.
+          A record of LEGO sets built since late 2023. It started as a farewell gift when I left Razorpay. Somewhere along the way, building LEGO became a way to slow down and sit with my thoughts. Two years and 36,000+ pieces later, this page is simply a record of what I've built, every set documented, brick by brick (or pixel by pixel, #sorrynotsorry).
         </p>
         <img
           src="/lego/heart.png"
