@@ -69,7 +69,7 @@ const AnimatedCounter = ({ end, duration = 2000, label }) => {
   return (
     <div ref={ref} sx={{ textAlign: "center" }}>
       <div sx={{
-        fontSize: ["28px", "36px", "42px"],
+        fontSize: ["22px", "36px", "42px"],
         fontWeight: "700",
         fontFamily: "'Oswald', sans-serif",
         color: "#6B46C1",
@@ -78,12 +78,12 @@ const AnimatedCounter = ({ end, duration = 2000, label }) => {
         {count.toLocaleString()}
       </div>
       <div sx={{
-        fontSize: "10px",
+        fontSize: ["8px", "10px"],
         color: "secondary",
         textTransform: "uppercase",
         letterSpacing: "0.15em",
         fontWeight: "500",
-        marginTop: "4px",
+        marginTop: ["2px", "4px"],
       }}>
         {label}
       </div>
@@ -383,13 +383,13 @@ const LegoCollection = () => {
       <div sx={{
         display: "flex",
         justifyContent: "space-between",
-        alignItems: ["flex-start", "center"],
-        flexDirection: ["column", "row"],
-        gap: ["24px", "32px"],
-        marginBottom: ["24px", "32px"],
+        alignItems: "center",
+        flexDirection: "row",
+        gap: ["16px", "32px"],
+        marginBottom: ["16px", "32px"],
       }}>
         <h1 sx={{
-          fontSize: ["36px", "44px", "52px"],
+          fontSize: ["28px", "44px", "52px"],
           fontWeight: "700",
           color: "text",
           margin: 0,
@@ -398,7 +398,7 @@ const LegoCollection = () => {
         }}>
           Lego Land
         </h1>
-        <div sx={{ display: "flex", gap: ["32px", "48px"] }}>
+        <div sx={{ display: "flex", gap: ["20px", "48px"] }}>
           <AnimatedCounter end={totalSets} label="Sets" duration={1200} />
           <AnimatedCounter end={totalParts} label="Pieces" duration={2000} />
         </div>
@@ -407,17 +407,17 @@ const LegoCollection = () => {
       {/* Intro with Heart Image */}
       <div sx={{
         display: "flex",
-        gap: ["20px", "28px"],
+        gap: ["12px", "28px"],
         alignItems: "center",
-        marginBottom: ["20px", "24px"],
-        marginTop: ["-8px", "-12px"],
-        flexDirection: ["column", "row"],
+        marginBottom: ["16px", "24px"],
+        marginTop: ["-4px", "-12px"],
+        flexDirection: "row",
       }}>
         <p sx={{
-          fontSize: ["16px", "17px", "18px"],
+          fontSize: ["13px", "17px", "18px"],
           color: "secondary",
           margin: 0,
-          lineHeight: 1.75,
+          lineHeight: 1.7,
           flex: 1,
         }}>
           Welcome to my little corner of brick-built obsession. What started as a parting gift when I left Razorpay in late 2023 has quietly grown into a full-blown hobby. Two years and 36,000+ pieces later, this page serves as my personal archive: a repository of every set I've built, tracked down to the last brick. Yes, there's an Excel sheet for this.
@@ -426,9 +426,9 @@ const LegoCollection = () => {
           src="/lego/heart.png"
           alt="LEGO Heart"
           sx={{
-            width: ["140px", "180px", "200px"],
+            width: ["100px", "180px", "200px"],
             height: "auto",
-            borderRadius: "12px",
+            borderRadius: "8px",
             flexShrink: 0,
           }}
         />
