@@ -25,6 +25,10 @@ module.exports = {
             title: `About`,
             slug: `/about`,
           },
+          {
+            title: `Lego Land`,
+            slug: `/lego`,
+          },
         ],
         externalLinks: [
           {
