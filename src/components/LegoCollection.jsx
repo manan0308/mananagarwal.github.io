@@ -6,22 +6,22 @@ import { useState, useEffect, useRef, useMemo } from "react"
 const legoSets = [
   { date: "2023-11-26", theme: "Technic", name: "McLaren Formula 1 Race Car", parts: 1434, image: "mclaren-f1.jpg" },
   { date: "2024-01-13", theme: "Technic", name: "Peugeot 9X8 24H Le Mans Hybrid Hypercar", parts: 1775, image: "peugeot-9x8.jpg" },
-  { date: "2024-02-02", theme: "Technic", name: "Heavy-Duty Tow Truck", parts: 2017, image: "Heavy-Duty Tow Truck.JPG" },
-  { date: "2024-02-19", theme: "Icons", name: "NASA Space Shuttle Discovery", parts: 2354, image: "Space Shuttle Discovery.jpg" },
+  { date: "2024-02-02", theme: "Technic", name: "Heavy-Duty Tow Truck", parts: 2017, image: "heavy-duty-tow-truck.jpg" },
+  { date: "2024-02-19", theme: "Icons", name: "NASA Space Shuttle Discovery", parts: 2354, image: "space-shuttle-discovery.jpg" },
   { date: "2024-04-15", theme: "Technic", name: "Mercedes-AMG F1 W14 E Performance", parts: 1642, image: "mercedes-f1.jpg" },
   { date: "2024-04-16", theme: "Technic", name: "Ferrari Daytona SP3", parts: 3778, image: "ferrari-daytona.jpg" },
-  { date: "2024-05-04", theme: "Icons", name: "PAC-MAN Arcade", parts: 2651, image: "PAC-MAN Arcade.jpg" },
-  { date: "2024-05-16", theme: "Icons", name: "Bonsai Tree", parts: 878, image: "bonsai-tree.png" },
+  { date: "2024-05-04", theme: "Icons", name: "PAC-MAN Arcade", parts: 2651, image: "pac-man-arcade.jpg" },
+  { date: "2024-05-16", theme: "Icons", name: "Bonsai Tree", parts: 878, image: "bonsai-tree.jpg" },
   { date: "2024-06-08", theme: "Icons", name: "NASA Artemis Space Launch System", parts: 3601, image: "artemis-sls.jpg" },
-  { date: "2024-09-25", theme: "Technic", name: "Mercedes-Benz G 500 PROFESSIONAL Line", parts: 2891, image: "Mercedes-Benz G 500 PROFESSIONAL Line.jpg" },
-  { date: "2024-09-26", theme: "Icons", name: "Concorde", parts: 2083, image: "concorde.png" },
-  { date: "2024-09-26", theme: "Icons", name: "Flower Bouquet", parts: 756, image: "Flower Bouquet.JPG" },
-  { date: "2024-10-04", theme: "Icons", name: "NASA Apollo 11 Lunar Lander", parts: 1087, image: "NASA Apollo 11 Lunar Lander.jpg" },
-  { date: "2024-12-18", theme: "Architecture", name: "Taj Mahal", parts: 2022, image: "Taj Mahal.jpg" },
-  { date: "2025-02-20", theme: "Technic", name: "Deep-Sea Research Submarine", parts: 413, image: "submarine.png" },
+  { date: "2024-09-25", theme: "Technic", name: "Mercedes-Benz G 500 PROFESSIONAL Line", parts: 2891, image: "mercedes-benz-g500.jpg" },
+  { date: "2024-09-26", theme: "Icons", name: "Concorde", parts: 2083, image: "concorde.jpg" },
+  { date: "2024-09-26", theme: "Icons", name: "Flower Bouquet", parts: 756, image: "flower-bouquet.jpg" },
+  { date: "2024-10-04", theme: "Icons", name: "NASA Apollo 11 Lunar Lander", parts: 1087, image: "nasa-apollo-11.jpg" },
+  { date: "2024-12-18", theme: "Architecture", name: "Taj Mahal", parts: 2022, image: "taj-mahal.jpg" },
+  { date: "2025-02-20", theme: "Technic", name: "Deep-Sea Research Submarine", parts: 413, image: "submarine.jpg" },
   { date: "2025-03-01", theme: "Speed Champions", name: "Red Bull RB20 & Ferrari SF-24", parts: 522, image: "oracle-ferrari.jpg" },
   { date: "2025-04-28", theme: "Technic", name: "McLaren P1", parts: 3893, image: "mclaren-p1.jpg" },
-  { date: "2025-04-28", theme: "Icons", name: "Chrysanthemum & Plum Blossom", parts: 605, image: "chrysanthemum-plum-blossom.png" },
+  { date: "2025-04-28", theme: "Icons", name: "Chrysanthemum & Plum Blossom", parts: 605, image: "chrysanthemum-plum-blossom.jpg" },
   { date: "2025-04-28", theme: "Art", name: "Hokusai – The Great Wave", parts: 1810, image: "great-wave.jpg" },
 ]
 
@@ -176,6 +176,7 @@ const Lightbox = ({ image, name, onClose }) => {
       <img
         src={`/lego/${image}`}
         alt={name}
+        loading="eager"
         onClick={(e) => e.stopPropagation()}
         sx={{
           maxWidth: "90vw",
@@ -248,6 +249,7 @@ const LegoCard = ({ set, index, onImageClick }) => {
           <img
             src={`/lego/${set.image}`}
             alt={set.name}
+            loading="lazy"
             onError={() => setImageError(true)}
             sx={{
               position: "absolute",
@@ -423,8 +425,9 @@ const LegoCollection = () => {
           A record of LEGO sets built since late 2023. It started as a farewell gift when I left Razorpay. Somewhere along the way, building LEGO became a way to slow down and sit with my thoughts. Two years and 36,000+ pieces later, this page is simply a record of what I've built, every set documented, brick by brick (or pixel by pixel, #sorrynotsorry).
         </p>
         <img
-          src="/lego/heart.png"
+          src="/lego/heart.jpg"
           alt="LEGO Heart"
+          loading="lazy"
           sx={{
             width: ["100px", "180px", "200px"],
             height: "auto",
@@ -493,7 +496,7 @@ const LegoCollection = () => {
         margin: 0,
         marginBottom: "20px",
       }}>
-        Showing {filteredAndSortedSets.length} {filteredAndSortedSets.length === 1 ? 'set' : 'sets'}
+        Showing {selectedTheme === "All" ? totalSets : filteredAndSortedSets.length} {(selectedTheme === "All" ? totalSets : filteredAndSortedSets.length) === 1 ? 'set' : 'sets'} <span sx={{ opacity: 0.7 }}>(click image to see full size)</span>
       </p>
 
       {/* Grid */}
