@@ -22,8 +22,8 @@ module.exports = {
             slug: `/blog`,
           },
           {
-            title: `About`,
-            slug: `/about`,
+            title: `AI Tinkering`,
+            slug: `/ai-tinkering`,
           },
           {
             title: `Lego Land`,
@@ -31,6 +31,10 @@ module.exports = {
           },
         ],
         externalLinks: [
+          {
+            name: `About`,
+            url: `/about`,
+          },
           {
             name: `Twitter`,
             url: `https://twitter.com/manan_0308`,

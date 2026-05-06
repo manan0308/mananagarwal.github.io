@@ -4,7 +4,7 @@ import originalTheme from "@lekoarts/gatsby-theme-minimal-blog/src/gatsby-plugin
 const theme = merge(originalTheme, {
   // Reduce top spacing on all sections
   section_hero: {
-    mt: ["-16px", "-24px", "-32px"],
+    mt: ["-32px", "-48px", "-64px"],
   },
   layout: {
     container: {
@@ -12,7 +12,7 @@ const theme = merge(originalTheme, {
       px: [4, 4, 5],
     },
     main: {
-      mt: ["-20px", "-32px", "-40px"],
+      mt: ["-40px", "-72px", "-96px"],
     },
   },
   fonts: {
