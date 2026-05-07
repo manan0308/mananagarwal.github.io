@@ -7,7 +7,7 @@ const projects = [
     year: "2026",
     title: "Nifty 500 Momentum Picker",
     status: "Live",
-    github: "https://github.com/manan0308/momentum-strat",
+    github: "https://github.com/manan0308/momentum-live",
     body: (
       <p>
         A momentum stock-picker for the Nifty 500. <strong>10 strategies running live</strong>, with a{" "}
@@ -35,7 +35,7 @@ const projects = [
     year: "2026",
     title: "CT and MRI Explainer and Comparer",
     status: "Shipped",
-    github: "https://github.com/manan0308/MedGamma",
+    github: "https://github.com/manan0308/medgemma-radiology",
     body: (
       <p>
         Built during my dad&rsquo;s illness to read his scans more carefully. Runs on Google&rsquo;s{" "}
@@ -119,7 +119,7 @@ const projects = [
     year: "2024",
     title: "Atlas x Wordle",
     status: "Shipped",
-    github: "https://github.com/manan0308/EndlessGeoWordle",
+    github: "https://github.com/manan0308/geo-wordle",
     body: (
       <p>
         My first proper build that wasn&rsquo;t on Lovable or Bolt, and the project that got me into Claude Code.
