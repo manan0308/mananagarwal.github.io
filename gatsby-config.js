@@ -8,8 +8,8 @@ module.exports = {
     siteTitle: `Manan Agarwal`,
     siteTitleAlt: `Manan Agarwal`,
     siteHeadline: `Manan Agarwal`,
-    siteDescription: `I build stuff on the internet, for the internet and share my learnings.`,
-    siteImage: `/mananpicture.jpg`,
+    siteDescription: `I build stuff on the internet, for the internet — and share what I learn along the way. Side projects mostly built on Claude Code or Codex.`,
+    siteImage: `/og-card.jpg`,
     author: `@manan_0308`,
   },
   plugins: [
