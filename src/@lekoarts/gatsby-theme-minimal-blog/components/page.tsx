@@ -20,7 +20,7 @@ const PAGE_META: Record<string, { title: string; description: string }> = {
   "/ai-tinkering": {
     title: "Built with AI",
     description:
-      "Nine personal AI projects — most started as weekend curiosity, a few graduated into things I use every day. Built with Claude Code or Codex.",
+      "My AI tinkering — applied projects in stock research, multi-asset allocation, medical imaging, and LLM-powered knowledge systems.",
   },
   "/lego": {
     title: "Lego Land",
