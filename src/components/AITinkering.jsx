@@ -7,13 +7,14 @@ const projects = [
     year: "2026",
     title: "Nifty 500 Momentum Picker",
     status: "Live",
-    github: "https://github.com/manan0308/momentum-live",
+    github: null,
+    shareOnRequest: true,
     body: (
       <p>
-        A momentum stock-picker for the Nifty 500. <strong>10 strategies running live</strong>, with a{" "}
-        <strong>46% 5-year backtest CAGR</strong>. The hard part was the data. NSE doesn&rsquo;t publish historical index
-        membership, so I scraped years of press releases to reconstruct it. Without that, a backtest only runs on the
-        companies that are in the index today, which inflates returns.
+        A momentum stock-picker for the Nifty 500. <strong>10 strategies running live</strong>, with{" "}
+        <strong>upwards of 30% 5-year backtest CAGR</strong>. The hard part was the data. NSE doesn&rsquo;t publish
+        historical index membership, so I scraped years of press releases to reconstruct it. Without that, a backtest
+        only runs on the companies that are in the index today, which inflates returns.
       </p>
     ),
   },
@@ -21,7 +22,8 @@ const projects = [
     year: "2026",
     title: "Multi-Asset Portfolio Allocator",
     status: "Live",
-    github: "https://github.com/manan0308/trader",
+    github: null,
+    shareOnRequest: true,
     body: (
       <p>
         A weekly rebalanced allocator across Nifty large, mid and smallcap, a US index, gold, silver and debt.{" "}
@@ -288,6 +290,8 @@ const AITinkering = () => (
                   <>
                     <a href={p.github}>github</a> →
                   </>
+                ) : p.shareOnRequest ? (
+                  `(happy to share repo on request)`
                 ) : (
                   `private`
                 )}
