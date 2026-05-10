@@ -15,20 +15,7 @@ export default function HTML(props) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
-        {/* Google Analytics 4 */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GHSYW6EHT"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-3GHSYW6EHT', {
-                send_page_view: true
-              });
-            `,
-          }}
-        />
+        {/* Google Analytics 4 is loaded by gatsby-plugin-google-gtag (configured in gatsby-config.js) */}
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

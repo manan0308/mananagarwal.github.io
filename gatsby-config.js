@@ -46,6 +46,21 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [`G-3GHSYW6EHT`],
+        gtagConfig: {
+          anonymize_ip: true,
+          send_page_view: true,
+        },
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+          exclude: [],
+        },
+      },
+    },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
