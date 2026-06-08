@@ -5,6 +5,18 @@
 [build.environment]
   NODE_VERSION = "20"
 
+[[redirects]]
+  from = "/a-year-of-battles-my-fathers-fight-against-brain-tumor"
+  to = "/navigating-cancer-a-caregivers-journal/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/a-year-of-battles-my-fathers-fight-against-brain-tumor/"
+  to = "/navigating-cancer-a-caregivers-journal/"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
